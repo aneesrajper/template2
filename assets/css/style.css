@@ -1,0 +1,3029 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    width: 100%;
+}
+.x-container {
+    width: 100%;
+    max-width: 1280px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin: 0 auto;
+}
+.x-row {
+    display: flex;
+    margin-left: -15px; 
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+[class^='x-col-'] {
+    padding: unset;
+    padding: 15px;
+    position: relative;
+}
+
+.x-col-12 {
+    flex: 0 0 100%;
+    width: 100%;
+
+}
+.x-col-6 {
+    flex: 0 0 50%;
+    width: 50%;
+
+}
+.x-col-4 {
+    flex: 0 0 33.333%;
+    width: 33.3333%;
+
+}
+.x-col-44 {
+    flex: 0 0 25%;
+    width: 25%;
+
+}
+.x-col-8,.x-col-88 {
+    flex: 0 0 66.6666%;
+    width: 66.66666%;
+
+}
+.x-col-3 {
+    flex: 0 0 33.33333%;
+    width: 33.33333%;
+
+}
+.x-col-33 {
+    flex: 0 0 20%;
+    width: 20%;
+
+}
+.x-col-40 {
+    flex: 0 0 40%;
+    width: 40%;
+
+}
+
+
+
+/* header section */
+.wpjobpress-header-sec {
+    position: relative;
+    padding: 9px 0px;
+    z-index: 15;
+    margin: 0 auto;
+    transition: 1s;
+    transform-origin: top;
+    background-color: transparent;
+}
+
+.wpjobpress-header-sec .wpjobpress-nav {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+
+}
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu {
+    position: relative;
+}
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu ul li {
+
+    position: relative;
+    line-height: 15px;
+    padding: 15px 18px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    float: left;
+    font-style: normal;
+
+}
+
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu ul ul {
+    position: absolute;
+    background-color: white;
+    float: left;
+    top: 100%;
+    color: black;
+    left: 0;
+    opacity: 0;
+    z-index: 8;
+    min-width: 180px;
+    border-top: 2px solid var(--primary-color);
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+    color: black;
+    -ms-box-shadow: 0 6px 15px rgba(64,79,104,.05);
+    box-shadow: 0 6px 15px rgba(64,79,104,.05);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all .3s ;
+}
+
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu ul ul li {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    padding: 2px 20px;
+    float: none;
+    width: 150px;
+}
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu ul ul li:hover{
+    cursor: pointer;
+    color: #22218c;
+}
+.wpjobpress-header-sec .wpjobpress-nav .wpjobpress-menu ul li:hover > ul{
+    opacity: 1;
+    transform: scaleY(1);
+}
+.wpjobpress-header-sec .wpjobpress-nav .search{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.wpjobpress-header-sec .wpjobpress-nav .login-btn {
+   position: relative;
+   background: transparent;
+    border: 0;
+    
+
+}
+.wpjobpress-header-sec .wpjobpress-nav .login-btn a{
+    position: relative;
+    display: block;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 9px 25px;
+    transition: all .3s;
+    text-decoration: none;
+    color: white;
+}
+.wpjobpress-header-sec .wpjobpress-nav .login-btn a:hover{
+    cursor: pointer;
+    color: #22218c;
+    background-color: white;
+}
+.wpjobpress-header-sec .wpjobpress-nav .login-btn a:hover{
+    color: #22218c;
+}
+
+.wpjobpress-header-sec .wpjobpress-nav  .job-btn {
+    position: relative;
+    background: transparent;
+    border: 0;
+}
+.wpjobpress-header-sec .wpjobpress-nav .job-btn a{
+    position: relative;
+    display: block;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    white-space: nowrap;
+    border: 1px solid #fff;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 9px 25px;
+    transition: all .3s;
+    text-decoration: none;
+    color:black;
+
+}
+.wpjobpress-header-sec .wpjobpress-nav .job-btn a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #22218c;
+}
+/* main section */
+.wpjobpress-main-wrape {
+    position: relative;
+    display: block;
+    padding: 43px 15px;
+    top: -315px;
+}
+.wpjobpress-main-wrape::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/bg-main.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    content: "";
+}
+.wpjobpress-main-wrape .wpjobpress-main-left{
+    position: relative;
+    padding: 270px 0 6px;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .wpjobpress-tittle-box{
+    position: relative;
+    margin-bottom: 40px;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .wpjobpress-tittle-box h2{
+    font-size: 50px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .wpjobpress-tittle-box p{
+    font-size: 15px;
+    color: #fff;
+    line-height: 25px;
+}
+.wpjobpress-form-job {
+    position: relative;
+    border: 1px solid #ecedf2;
+    box-shadow: 0 7px 18px rgba(64,79,104,.05);
+    margin-bottom: 22px;
+    width: 100%;
+    background: white;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.wpjobpress-form-job form{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.wpjobpress-form-control{
+    position: relative;
+    text-align: left;
+    margin-bottom: 0;
+    border-right: 1px solid #e6e6e6;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.wpjobpress-form-control span{
+    position: absolute;
+    left: -5px;
+    top: 55%;
+    margin-top: -15px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    color: #5c6770;
+    background: #fff;
+    z-index: 9;
+}
+.wpjobpress-form-control input[type="text"]{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 25px;
+    font-size: 15px;
+    color: dimgray;
+    line-height: 30px;
+    font-weight: 400;
+    background-color: #fff;
+    padding: 15px 0 15px 40px;
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    transition: all .3s ease;
+}
+.wpjobpress-form-control input[type="submit"]{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #1967d2;
+    font-size: 15px;
+    line-height: 20px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px;
+    transition: all .3s;
+}
+.wpjobpress-form-control input[type="submit"]:hover{
+    background-color: #22218c;
+    cursor: pointer;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .papolar{
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 26px;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .papolar span{
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.wpjobpress-main-wrape .wpjobpress-main-left .papolar a{
+    
+    text-decoration: none;
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .bottom-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 175px;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .bottom-box .count-cllient{
+    display: flex;
+    position: relative;
+    color: #fff;
+}
+
+.wpjobpress-main-wrape .wpjobpress-main-left .bottom-box .count-cllient span{
+    color: white;
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .bottom-box a{
+    display: flex;
+    position: relative;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+   
+}
+.wpjobpress-main-wrape .wpjobpress-main-left .bottom-box a span{
+    position: relative;
+    margin-right: 5px;
+    font-size: 25px;
+    line-height: 25px;
+}
+.wpjobpress-main-wrape .wpjobpress-main-right{
+  
+    padding: 200px 0 59px;
+    
+}
+
+
+
+/* work section */
+.wpjobpress-work-wrape{
+    position: relative;
+    padding: 40px 0 50px;
+}
+.wpjobpress-work-head{
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center!important;
+}
+.wpjobpress-work-head h3{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #202124;
+    font-weight: 500;
+    font-style: normal;
+}
+.wpjobpress-work-head span{
+    position: relative;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    color: #696969;
+    font-style: normal;
+    
+
+}
+.wpjobpress-work-card{
+    position: relative;
+    text-align: center;
+    padding: 50px 44px 60px;
+    transition: all .3s ease;
+    background: #fff;
+    border-radius: 8px;
+}
+.wpjobpress-work-card img{
+    width: 105px;
+    position: relative;
+    margin-bottom: 35px;
+}
+.wpjobpress-work-card:hover{
+    box-shadow: 0 0 30px rgba(64,79,104,.1);
+}
+.wpjobpress-work-card h5{
+    position: relative;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: normal;
+}
+.wpjobpress-work-card p{
+    font-size: 14px;
+    line-height: 24px;
+    color: dimgray;
+    font-style: normal;
+    
+}
+/* job sectin */
+.jwpjobpress-job-wrape{
+    position: relative;
+    background-color: #f5f7fc;
+    padding: 100px 0;
+}
+.wpjobpress-job-head{
+    position: relative;
+    margin-bottom: 50px;
+}
+.wpjobpress-job-head h3{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #202124;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+}
+.wpjobpress-job-head p{
+    position: relative;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    color: dimgrey;
+    text-align: center;
+    font-style: normal;
+}
+.wpjobpress-job-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15px;
+    background: #fff;
+    border: 1px solid #ecedf2;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all .3s ease;
+    flex-wrap: wrap;
+}
+.wpjobpress-job-box .job-box-content {
+    position: relative;
+    padding-left: 80px;
+    min-height: 60px;
+    padding-top: 2px;
+
+}
+.wpjobpress-job-box .job-box-content span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    transition: all .3s ease;
+}
+.wpjobpress-job-box .job-box-content span img{
+    width: 60px;
+}
+.wpjobpress-job-box .job-box-content h4 a{
+    font-size: 18px;
+    color: #202124;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-style: normal;
+}
+.wpjobpress-job-box .job-box-content ul{
+    
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.wpjobpress-job-box .job-box-content ul li i{
+    margin-left: 0px;
+    margin-right: 8px;
+}
+.wpjobpress-job-box .job-box-content ul li{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    font-size: 16px;
+   
+}
+.wpjobpress-job-box .job-box-content ul li span{
+    display: flex;
+}
+
+.wpjobpress-job-box .job-box-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 9px;
+}
+.wpjobpress-job-box .job-box-info li{
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 15px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+.wpjobpress-job-box .job-box-info .time{
+    background-color: rgba(25,103,210,.15);
+    color: #1967d2;
+}
+.wpjobpress-job-box .job-box-info .privacy{
+background-color: rgba(52,168,83,.15);;
+color: #34a853;
+}
+.wpjobpress-job-box .job-box-info .required{
+background-color: rgba(249,171,0,.15);;
+color:#f9ab00;
+}
+.wpjobpress-job-box .bookmark-btn{
+    position: absolute;
+    right: 43px;
+    top: 22px;
+    height: 35px;
+    width: 35px;
+    line-height: 38px;
+    text-align: center;
+    border: 0;
+    font-size: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    transition: all .3s ease;
+}
+.wpjobpress-job-box .bookmark-btn:hover{
+    background: #ecedf2;
+    border: 0;
+    cursor: pointer;
+}
+.wpjobpress-job-btn{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin: 0 auto;
+    width: fit-content;
+}
+.wpjobpress-job-btn .job-load{
+    position: relative;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    text-decoration: none;
+    background-color: #1967d2;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 15px 30px;
+    transition: all .3s;
+}
+.wpjobpress-job-btn .job-load:hover{
+    cursor: pointer;
+    background-color:#193d70;
+    color: white;
+}
+/* city section */
+.wpjobpress-city-wrape{
+    position: relative;
+    padding: 100px 0 70px;
+}
+.wpjobpress-city-tittle{
+    position: relative;
+    margin-bottom: 50px;
+}
+.wpjobpress-city-tittle h2{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #202124;
+    font-weight: 500;
+}
+.wpjobpress-city-tittle p{
+    position: relative;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    font-size: 15px;
+    color: dimgray;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+.new-yark {
+    position: relative;
+    border-radius: 10px;
+     width: 100%;
+    height: 100%;
+}
+.new-yark-img {
+    overflow: hidden;
+    position: relative;
+    height: 96%;
+}
+.city-img {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.new-yark-img img{
+    transition: all .3s;
+    transform: scale(1);
+    height: 100%;
+}
+.new-yark:hover .new-yark-img img{
+    transform: scale(1.1);
+}
+.inner8{
+    display: flex;
+    flex-wrap: wrap;
+}
+.city-box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 0;
+}
+.city-img img{
+    transition: all .3s;
+    transform: scale(1);
+}
+.city-box:hover .city-img img{
+    transform: scale(1.2);
+
+}
+.city-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 30px 25px;
+    z-index: 9;
+    line-height: 1;
+}
+.new-content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 52px 25px;
+    z-index: 9;
+}
+.city-content a, .new-content a{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 2px;
+    text-decoration: none;
+    line-height: 25px;
+}
+.city-content a span, .new-content a span{
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+}
+/* apply section */
+.wpjobpress-apply-wrape{
+    display: block;
+    position: relative;
+    width: 100%;
+    background-image: url(../images/bg222.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    padding: 170px 0 160px;
+    text-align: center;
+}
+.wpjobpress-sub-apply{
+    margin-bottom: 33px;
+}
+.wpjobpress-apply-title{
+    text-align: center!important;
+    position: relative;
+    margin-bottom: 30px;
+}
+.wpjobpress-apply-title h2{
+
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+}
+.wpjobpress-apply-title p{
+    font-style: normal;
+    position: relative;
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+    line-height: 26px;
+}
+.wpjobpress-apply-btns{
+    position: relative;
+    display: inline-block;
+    padding-top: 60px;
+}
+.wpjobpress-apply-btns a{
+    margin: 0 10px 10px;
+    text-decoration: none;
+    outline: none;
+}
+.wpjobpress-apply-btns .apply-search {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #1967d2;
+    background-color: #e2eaf8;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px;
+    transition: all .3s;
+}
+.wpjobpress-apply-btns .apply-search:hover{
+    background-color: #0146a6;
+    color: white;
+
+}
+.wpjobpress-apply-btns .apply-now{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #202124;
+    background-color:#f9ab00 ;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px;
+}
+.wpjobpress-apply-btns .apply-now:hover{
+    background-color: #da9604 ;
+}
+/* candidate section head */
+.wpjobpress-candidate-wrape{
+    position: relative;
+    padding: 100px 0;
+    border-bottom: 1px solid #ecedf2;
+}
+.wpjobpress-candidat-head{
+    position: relative;
+    margin-bottom: 50px;
+    padding: 7px 28px;
+
+}
+.wpjobpress-candidat-head h3{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #202124;
+    font-weight: 500;
+}
+.wpjobpress-candidat-head p{
+    position: relative;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    color: dimgray;
+    font-weight: 400;
+}
+/* slider */
+.wpjobpress-main-slider {
+    display: flex;
+    width: 100%;
+}
+.slider1 {
+    display: contents;
+}
+.wpjobpress-slide-box{
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 55px 35px;
+    background: #fff;
+    border: 1px solid #ecedf2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: all .3s ease;
+    text-align: center;
+    margin-left: 27px;
+}
+.wpjobpress-slide-box img{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 14px;
+}
+.wpjobpress-slide-box h4{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 14px;
+}
+.wpjobpress-slide-box span{
+    display: block;
+    font-size: 14px;
+    color: #1967d2;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+.wpjobpress-slide-box .location{
+    display: flex;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: dimgray;
+    margin-bottom: 50px;
+}
+.wpjobpress-slide-box .location i{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.wpjobpress-slide-box .slider-btn{
+    max-width: 240px;
+    width: 100%;
+    position: relative;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #1967d2;
+    background-color: #e2eaf8;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 18px 76px 15px;
+    transition: all .5s ease;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.wpjobpress-slide-box .slider-btn:hover{
+    background-color: #0146a6;
+    color: white;
+}
+/* news section */
+.wpjobpress-news-wrape{
+    position: relative;
+    padding: 100px 0 50px;
+}
+.wpjobpress-news-tittle{
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+.wpjobpress-news-tittle h2{
+    font-style: normal;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    color: #202124;
+    font-weight: 500;
+
+}
+.wpjobpress-news-tittle p{
+    font-style: normal;
+    position: relative;
+    margin-top: 15px;
+    font-size: 15px;
+    color: dimgray;
+    line-height: 24px;
+    font-weight: 400;
+}
+.wpjobpress-news-box{
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+}
+.wpjobpress-news-box .news-img{
+    position: relative;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0;
+    object-fit: contain;
+
+}
+.wpjobpress-news-box .news-img img{
+    width: 391px;
+    height: 258px;
+    transition: all .3s;
+}
+.wpjobpress-news-box:hover .news-img img{
+    transform: scale(1.2);
+}
+.wpjobpress-news-box .news-content{
+    padding: 17px 0 0;
+}
+.wpjobpress-news-box .news-content ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    list-style: none;
+}
+.wpjobpress-news-box .news-content ul li{
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    color: dimgray;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-style: normal;
+}
+.wpjobpress-news-box .news-content ul li:nth-child(2)::before{
+    position: absolute;
+    left: -11px;
+    top: 50%;
+    margin-top: -3px;
+    height: 6px;
+    width: 6px;
+    background: dimgray;
+    border-radius: 5px;
+    content: "";
+
+}
+.wpjobpress-news-box .news-content h3{
+    font-style: normal;
+    font-size: 18px;
+    color: #202124;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.wpjobpress-news-box .news-content p{
+    font-size: 14px;
+    line-height: 24px;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+.wpjobpress-news-box .news-content a{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1967d2;
+    transition: .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.wpjobpress-news-box .news-content a i{
+
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 4px;
+    transition: .3s;
+}
+.wpjobpress-news-box .news-content a:hover > i{
+    transform: translateX(15px);
+    opacity: 0;
+
+}
+/* section find */
+.wpjobpress-find-wrape{
+    position: relative;
+    padding: 60px 0;
+    background-color: #deebff;
+}
+.wpjobpress-find-inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wpjobpress-find-tittle{
+    margin-bottom: 0;
+    position: relative;
+
+}
+.wpjobpress-find-tittle h3{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2em;
+    font-style: normal;
+    color: #202124;
+    font-weight: 500;
+}
+.wpjobpress-find-tittle p{
+    position: relative;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 26px;
+    color: dimgray;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wpjobpress-find-btn-box a{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #1967d2;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 18px 35px 15px;
+    margin-right: 20px;
+    transition: .3s;
+}
+.wpjobpress-find-btn-box a:hover{
+    background-color: #0146a6;
+}
+/* footer */
+.wpjobpress-footer-wrape{
+    background-color: #1967d2;
+    padding: 70px 0px 11px
+}
+.wpjobpress-footer-contact{
+    position: relative;
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+.wpjobpress-footer-logo{
+    position: relative;
+    margin-bottom: 25px;
+}
+.wpjobpress-footer-logo img{
+    display: block;
+    width: 154px;
+    height: 50px;
+}
+.wpjobpress-footer-contact .phone {
+    position: relative;
+    font-size: 18px;
+    line-height: 28px;
+    color:  #deebff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.wpjobpress-footer-contact .phone span{
+    position: relative;
+    display: block;
+}
+.phone a,.address a {
+text-decoration: none;
+color:  #deebff;
+} 
+.wpjobpress-footer-contact .address {
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+    color:  #deebff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.wpjobpress-footer-widget {
+    position: relative;
+    padding-left: 20px;
+}
+.wpjobpress-footer-widget h3{
+    color: #fff;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+}
+.wpjobpress-footer-widget ul{
+    position: relative;
+    list-style: none;
+}
+.wpjobpress-footer-widget ul li{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    transition: all .2s ease;
+    color: #deebff;
+    margin-bottom: 15px;
+}
+.wpjobpress-footer-widget ul li::before{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 2px;
+    width: 20px;
+    opacity: 0;
+    content: "";
+    border-color: #fff;
+    border-bottom: 2px solid  #deebff;;
+    transition: all .3s ease;
+}
+.wpjobpress-footer-widget ul li a {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;   
+    transition: all .2s ease;
+    color: #deebff;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #1967d2;
+}
+
+.wpjobpress-footer-widget ul li:hover::before{
+    opacity: 1;
+}
+.wpjobpress-footer-widget ul li a:hover{
+    transform: translateX(25px);
+}
+.wpjobpress-footer-widgets2{
+    position: relative;
+}
+.wpjobpress-footer-widgets2 h2{position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.wpjobpress-footer-widgets2 p{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    line-height: 1.4em;
+    margin-bottom: 30px
+}
+.wpjobpress-footer-widgets2 .form-f-control{
+    position: relative;
+    margin-right: 20px;
+}
+.wpjobpress-footer-widgets2 .form-f-control input[type="text"]{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    line-height: 26px;
+    color: dimgray;
+    background: #fff;
+    padding: 15px 60px 15px 20px;
+    box-shadow: 0 6px 15px rgba(64,79,104,.05);
+    border-radius: 8px;
+    transition: all .3s ease;
+    outline: none;
+    border: 0;
+}
+.wpjobpress-footer-widgets2 .form-f-control input[type="submit"]{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 102px;
+    line-height: 37px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(64,79,104,.05);
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    background-color: #1967d2;
+    padding: 3px 35px;
+    margin-left: -10px;
+    transition: all .3s;
+
+}
+.wpjobpress-footer-widgets2 .form-f-control input[type="submit"]:hover{
+    background-color: #0146a6;
+    cursor: pointer;
+}
+.wpjobpress-footerBottom{
+    border-top: 1px solid hsla(0,0%,100%,.15);
+    position: relative;
+    width: 100%;
+    padding: 36px 0;
+    text-align: center;
+}
+
+.wpjobpress-footerBottom .fb-sub{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wpjobpress-footerBottom .copyright{
+    margin-left: 25px;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color:white;
+    padding: 0;
+}
+.wpjobpress-footerBottom .copyright p{
+    color: #deebff;
+    display: inline-block;
+}
+.wpjobpress-footerBottom .copyright p a{
+text-decoration: none;
+color: white;
+}
+.wpjobpress-footerBottom .social-footer{
+    margin-right: 25px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.wpjobpress-footerBottom .social-footer a{
+    position: relative;
+    margin-left: 18px;
+    font-size: 16px;
+    line-height: 24px;
+    color:white;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.wpjobpress-footerBottom .social-footer a:hover > i {
+    color: #da9604;
+}
+/* navbar sticky */
+.stickynav{
+    position: fixed;
+    background-color: #22218c;
+    top: 0;
+   
+    transition-duration: 1s;
+    width: 100%;
+    
+}
+/* scroll Top bt */
+.scrollTop-btn{
+    position: fixed;
+    right: 36px;
+    bottom:25px;
+    z-index: 9;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #23293e;
+    color: #1967d2;
+    background-color: rgba(25,103,210,.07);
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scrollTop-btn:hover{
+    background-color: #1967d2;
+    color: white;
+}
+/* / find jobs page css / */
+.find-b{
+    position: relative;
+    padding: 60px 0px;
+    background-color: #F5F7FC;
+
+}
+.wpjobpress-wrap-sec-find{
+    position: relative;
+    padding: 60px 0px;
+    background-color: #F5F7FC;
+}
+.wpjobpress-wrap-sec-find .wpjobpress-find-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wpjobpress-wrap-sec-find .wpjobpress-find-job ul{
+    display: flex;
+    list-style: none;
+    
+}
+.wpjobpress-find-job h3{
+    color: #202124;
+    font-size: 30px;
+    font-weight: 500;
+}
+.wpjobpress-find-job ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 15px;
+}
+.wpjobpress-find-job ul li{
+    padding: 5px;
+
+}
+.find-content-left{
+    background-color: #F5F7FC;
+}
+.wpjobpress-find-content{
+    position: relative;
+    padding: 60px 0px;
+
+}
+.wpjobpress-find-content .wpjobpress-find-content-left{
+    position: relative;
+    background: #F5F7FC;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    padding: 30px 30px 10px;
+}
+.wpjobpress-find-content-left .form-control p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 22px 0px;
+    background-color: white;
+    border-radius: 10px;
+}
+.wpjobpress-find-content-left .form-control p:focus{
+    border: 1px solid #0d6efd;
+
+}
+.wpjobpress-find-content-left .form-control p i{
+    font-size: 22px;
+}
+.wpjobpress-find-content-left .form-control input[type="text"]{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    height: 60px;
+    padding: 14px 10px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #696969;
+}
+
+.wpjobpress-find-content-left .find-form-top-two .form-control {
+display: flex;
+align-items: center;
+}
+
+.wpjobpress-find-content-left .find-form-top-3 .form-control {
+    display: flex;
+align-items: center;
+}
+.wpjobpress-find-content-left .find-form-top-4 .form-control {
+    display: flex;
+align-items: center;
+}
+.wpjobpress-find-content-left .find-form-top-4 .form-control label{
+margin-left: 6px;
+}
+.wpjobpress-find-content-left .find-form-top-3 .form-control label{
+    margin-left: 6px;
+    }
+    .wpjobpress-find-content-left .find-form-top-two .form-control label{
+        margin-left: 6px;
+        }
+.wpjobpress-find-content-left .find-form-top-two .form-control{
+    margin: 10px 0px;
+}
+.wpjobpress-find-content-left .find-form-top-3 .form-control{
+    margin: 10px 0px;
+}
+.wpjobpress-find-content-left .find-form-top-4 .form-control{
+    margin: 10px 0px;
+}
+
+.wpjobpress-find-content-left .btn-tag{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding: 20px 3px;
+}
+.wpjobpress-find-content-left .tag-btn{
+    
+    margin: 10px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 20px;
+    color: #696969;
+    padding: 5px 20px;
+    border: 0;
+    width: 26.33%;
+    display: flex;
+    justify-content: center;
+    
+}
+.wpjobpress-find-content-right .right-head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.right-bttn {
+    display: flex;
+    gap: 20px;
+}
+.wpjobpress-find-content-right .right-head p span{
+    font-size: 22px;
+    font-weight: 800;
+}
+.wpjobpress-find-content-right .right-bttn a{
+    position: relative;
+    height: 45px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #696969;
+    line-height: 25px;
+    background: #F0F5F7;
+    text-decoration: none;
+}
+.wpjobpress-find-content-right .job-box-content h4 a {
+    font-size: 15px;
+    color: #202124;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-style: normal;
+}
+.wpjobpress-find-content-right .job-box-content ul li {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    font-size: 12px;
+}
+.wpjobpress-find-content .call-job-find {
+    position: relative;
+    background-color: rgba(25, 103, 210, 0.07);
+    padding: 30px 30px;
+    padding-right: 140px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.wpjobpress-find-content .call-job-find h5 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 17px;
+}
+.wpjobpress-find-content .call-job-find p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #696969;
+    margin-bottom: 25px;
+}
+.wpjobpress-find-content .call-job-find a {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #1967D2;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px 35px;
+    text-decoration: none;
+}
+
+.wpjobpress-find-content .call-job-find .imgh {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    width: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wpjobpress-find-content .job-desc-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f7fc;
+}
+.wpjobpress-find-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.btn-box2{
+    background-color: #1967D2;
+    color: #FFFFFF;
+    padding: 18px 60px 15px 60px;
+    border-radius: 15px;
+}
+.btn-box3 {
+    font-size: 23px;
+    padding: 4px 12px;
+    margin-left: 20px;
+    color: #1967D2;
+}
+.btn-box a {
+    text-decoration: none;
+}
+
+/* job decription pge css */
+.wpjobpress-job-descr-sec {
+    padding: 60px 0px;
+    background: #f5f7fc;
+}
+.wpjobpress-job-descr-left {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.wpjobpress-job-detail {
+    padding: 50px 0px;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options .social-share{
+    display: flex;
+    align-items: center;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options .social-share h5{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 20px;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options .social-share a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #222222;
+    border-radius: 8px;
+    transition: all 300ms ease;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options .social-share .facebook{
+    background: #3B5998;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options .social-share .twitter{
+    background: #55ACEE;
+}
+.wpjobpress-job-detail .job-overview-decs .other-options .social-share .google{
+    background: #dd4b39;
+}
+.wpjobpress-job-detail .sidebar-widget {
+    position: relative;
+    padding: 30px 30px 30px;
+    background: #F5F7FC;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.wpjobpress-job-detail .company-widget .company-title {
+    position: relative;
+    padding-left: 78px;
+    min-height: 60px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+.wpjobpress-job-detail .company-widget .company-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+}
+.wpjobpress-job-detail .company-widget .company-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+}
+.wpjobpress-job-detail .company-widget .profile-link {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 19px;
+    color: #1967D2;
+}
+.wpjobpress-job-detail .company-widget .company-info {
+    position: relative;
+    margin-top: 25px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.wpjobpress-job-detail .company-widget .company-info li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    color: #202124;
+    margin-bottom: 19px;
+}
+.wpjobpress-job-detail .company-widget .company-info li span {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    color: #696969;
+}
+.wpjobpress-job-detail .company-widget .widget-content .company-info li .social-links {
+    display: flex;
+    align-items: center;
+}
+.wpjobpress-job-detail .company-widget .widget-content .company-info li .social-links a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #696969;
+    margin-left: 17px;
+    transition: all 300ms ease;
+}
+.wpjobpress-job-detail .wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .btn-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+.wpjobpress-job-detail .company-widget .btn-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+.wpjobpress-job-detail .company-widget .widget-content .btn-style-three {
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    color: #1967D2;
+    background: rgba(25, 103, 210, 0.15);
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 18px 35px 15px 35px;
+}
+.wpjobpress-job-descr-left .about-job-btns{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 30%;
+    gap: 15px;
+    justify-content: end;
+    flex-wrap: wrap;
+    
+}
+.wpjobpress-job-descr-left .about-job-btns .theme-btn {
+  
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #1967D2;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px 35px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.wpjobpress-job-descr-left .about-job-btns .bookmark-btn{
+    line-height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1967D2;
+    border-radius: 7px;
+    background: rgba(25, 103, 210, 0.07);
+    transition: all 300ms ease;
+    flex: 0 0 50px;
+    border: 0;
+    
+}
+.wpjobpress-job-detail .job-overview-decs .job-overview-decs-head h2{
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 20px;
+}
+.wpjobpress-job-detail .job-overview-decs .job-overview-decs-head p{
+    position: relative;
+    font-size: 15px;
+    line-height: 26px;
+    color: #696969;
+    margin-bottom: 26px;
+}
+.wpjobpress-job-detail .job-overview-decs .key-respons{
+    padding:20px 0px ;
+}
+.wpjobpress-job-detail .job-overview-decs .key-respons h2{
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 20px;
+}
+.wpjobpress-job-detail .job-overview-decs .key-respons ul{
+    position: relative;
+    margin-bottom: 50px;
+    list-style: none;
+    outline: 0;
+}
+.wpjobpress-job-detail .job-overview-decs .key-respons ul li{
+    position: relative;
+    font-size: 15px;
+    line-height: 26px;
+    color: #696969;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.wpjobpress-job-detail .job-overview-decs .key-respons ul li::before{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    height: 4px;
+    width: 4px;
+    background: #202124;
+    content: "";
+}
+.job-relity .job-relitty h3 {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.wpjobpress-job-descr-head .wpjobpress-job-descr-left .wpjobpress-job-box {
+    border: 0;
+    background: transparent;
+    padding-left: 0;
+}
+
+.wpjobpress-job-descr-head .wpjobpress-job-descr-left .wpjobpress-job-box .bookmark-btn {
+    
+        position: absolute;
+        right: 11px;
+        top: 22px;
+        height: 35px;
+        width: 35px;
+        line-height: 38px;
+        text-align: center;
+        border: 0;
+        font-size: 13px;
+        border-radius: 50%;
+        cursor: pointer;
+        background: #fff;
+        transition: all .3s ease;
+    
+}
+.wpjobpress-job-descr-head .wpjobpress-job-descr-left .wpjobpress-job-box .bookmark-btn:hover{
+    background: #ECEDF2;
+}
+.wpjobpress-job-descr-head .wpjobpress-job-descr-left .wpjobpress-job-box .bookmark-btn{
+    display: none;
+}
+.wpjobpress-job-descr-head .wpjobpress-job-descr-left .wpjobpress-job-box .job-box-content h4 a {
+    font-size: unset;
+    font-size: 22px;
+    color: #202124;
+    font-weight: unset;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    font-style: normal;
+}
+.job-description-top1
+.side-job-bar1 > h4{
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 30px;
+}
+
+.job-overview11 {
+    padding-top: 32px;
+}
+.job-overview11 ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.job-overview11 li {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+.job-overview11 ul li p{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.job-desci2{
+    padding-top: 33px;
+}
+.box-33{
+    padding-left: 33px;
+}
+.job-overview11 i{
+    color: #0d6efd;
+    font-size: 22px;
+    padding-top: 6px;
+}
+.side-job-bar1{
+    position: relative;
+    padding: 30px 30px 30px;
+    background: #F5F7FC;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.box-33 h5{
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+.jobi-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobi-card .wpjobpress-job-box .time{
+    display: none;
+} 
+.job-description-top1 .about-job-btns {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 23.5%;
+}
+.job-description-top1 .bookmark-btn {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        cursor: pointer;
+        color: #1967D2;
+        border-radius: 7px;
+        background: rgba(25, 103, 210, 0.07);
+        transition: all 300ms ease;
+        margin-left: 20px;
+        flex: 0 0 50px;
+        top: 0;
+}
+/* candidate-page */
+.wpjobpress-wrap-candidate-sec{
+    padding: 100px 0px;
+    background-color: #F5F7FC;
+}
+.wpjobpress-candidate-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* seacrh job page css */
+/* <!-- candidate page content */
+.wpjobpress-card-sec{
+    position: relative;
+    padding: 60px 0px;
+}
+.wpjobpress-card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.wpjobpress-card-head-left{
+display: flex;
+justify-content:flex-start;
+flex-wrap: wrap;
+gap: 18px;
+align-items: center;
+
+}
+.wpjobpress-card-head-left .wpjobpress-card-head-btn{
+    position: relative;
+    display: block;
+    gap: 18px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 15px 22px;
+    color: #1967D2;
+    background: rgba(25, 103, 210, 0.07);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.wpjobpress-card-head-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.wpjobpress-card-head-right .wpjobpress-card-head-btn{
+    position: relative;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #696969;
+    line-height: 25px;
+    background: #F0F5F7;
+    border: 0 !important;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.wpjobpress-card-sec .slide-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+    padding: 30px 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 300ms ease;
+    border: 1px solid #ECEDF2;
+    margin: unset;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.wpjobpress-card-sec .slide-box img{
+    width: 150px;
+    border-radius: 100px;
+}
+.wpjobpress-card-sec .slider-btn {
+    max-width: 404px;
+    width: 100%;
+    display: block;
+    position: relative;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #1967d2;
+    background-color: #e2eaf8;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 18px 76px 15px;
+    transition: all .5s ease;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+/* <!-- about job page */
+.wpjobpress-about-job-sec{
+    position: relative;
+    padding: 60px 0px;
+
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left{
+display: flex;
+flex-direction: column;
+
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-head .wpjobpress-job-box{ 
+    border: 0;
+    
+}
+.wpjobpress-about-job-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .bookmark-btn {
+    display: none;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-box-content h4 a {
+   
+    font-style: normal;
+    position: relative;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.3em;
+    color: #202124;
+    top: -3px;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-box-content h4 a:hover{
+    color: #1967D2;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-box-content span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    display: none;
+    transition: all .3s ease;
+}
+
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-box-content {
+    position: relative;
+    padding-left: 80px;
+    padding-left: unset;
+    min-height: 60px;
+    padding-top: 2px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview {
+    position: relative;
+    border: 1px solid #ECEDF2;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 30px 30px 0;
+    margin-bottom: 50px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview h4 {
+    position: relative;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 20px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}.wpjobpress-about-job-sec .wpjobpress-about-job-left 
+.job-overview li {
+    display: flex;
+    position: relative;
+    flex: 0 0 50%;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview li i{
+    font-size: 24px;
+    color: #1967D2;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview li .overwiew-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 27px;
+    font-size: 20px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview li .overwiew-content h5{
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #202124;
+    margin-bottom: 10px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview li .overwiew-content span{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .job-overview-decs-head h2{
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 20px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .job-overview-decs-head p{
+    position: relative;
+    font-size: 15px;
+    line-height: 26px;
+    color: #696969;
+    margin-bottom: 26px;
+}
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .key-respons h2{
+    position: relative;
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 800;
+    margin-bottom: 26px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .key-respons ul{
+    position: relative;
+    margin-bottom: 50px;
+    list-style: none;
+    outline: 0;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .key-respons ul li{
+    position: relative;
+    font-size: 15px;
+    line-height: 26px;
+    color: #696969;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .key-respons ul li::before{
+    position: absolute;
+    left: 0;
+    top: 12px;
+    height: 4px;
+    width: 4px;
+    background: #202124;
+    content: "";
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share h5 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 20px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #222222;
+    border-radius: 8px;
+    transition: all 300ms ease;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share a  i{
+    font-size: 20px;
+    margin-right: 6px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share a.facebook {
+    background: #3B5998;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share a.twitter {
+    background: #55ACEE;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share a.google {
+    background: #dd4b39;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-left .job-overview-decs .other-options .social-share a:hover {
+    opacity: .8;
+}
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-head .about-job-btns{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    justify-content: end;
+}
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-head .about-job-btns .btn-style-one {
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #1967D2;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px 35px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-head .about-job-btns .bookmark-btn {
+    line-height: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: #1967D2;
+    border-radius: 7px;
+    background: rgba(25, 103, 210, 0.07);
+    transition: all 300ms ease;
+    flex: 0 0 50px;
+    top: 0;
+    border: 0;
+}
+
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-head .about-job-btns .bookmark-btn:hover {
+    background-color: unset;
+    background: unset;
+    background: #ecedf2;
+    color: black;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget {
+    position: relative;
+    padding: 30px 30px 30px;
+    background: #F5F7FC;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .company-title {
+    position: relative;
+    padding-left: 78px;
+    min-height: 60px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .company-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .company-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .profile-link {
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 19px;
+    color: #1967D2;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .company-info {
+    position: relative;
+    margin-top: 25px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .company-info li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 26px;
+    color: #202124;
+    margin-bottom: 19px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .company-info li span {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    color: #696969;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .btn-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .widget-content .company-info li .social-links {
+    display: flex;
+    align-items: center;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .widget-content .company-info li .social-links a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #696969;
+    margin-left: 17px;
+    transition: all 300ms ease;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .widget-content .company-info li .social-links a:hover {
+    color: #BC91E8;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .company-widget .widget-content .btn-style-three {
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    color: #1967D2;
+    background: rgba(25, 103, 210, 0.15);
+    border-radius: 8px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px 35px;
+    
+}
+/* sidebar widget */
+
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-title {
+    position: relative;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #202124;
+    margin-bottom: 30px;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .clearfix{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form {
+    position: relative;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group {
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group input{
+    background-color: #fff;
+    border: 1px solid #ECEDF2;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group input[type="text"],.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group input[type="email"]{
+    position: relative;
+    outline: 0;
+    width: 100%;
+    display: block;
+    height: 60px;
+    line-height: 30px;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #696969;
+    background: #F0F5F7;
+    border: 1px solid #F0F5F7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group input[type="text"]:focus{
+    border-color: #1967D2;
+    background: #ffffff;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group input[type="email"]:focus{
+    border-color: #1967D2;
+    background: #ffffff;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group textarea {
+    background-color: #fff;
+    border: 1px solid #ECEDF2;
+    height: 160px;
+    outline: 0;
+    resize: none;
+    min-height: 160px;
+    padding: 22px 20px;
+    position: relative;
+    width: 100%;
+    display: block;
+    height: 60px;
+    line-height: 30px;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #696969;
+    background: #F0F5F7;
+    border: 1px solid #F0F5F7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: all 300ms ease;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group textarea:focus{
+    border-color: #1967D2;
+    background: #ffffff;
+}
+.wpjobpress-about-job-sec .wpjobpress-about-job-right .sidebar-widget .widget-content .default-form .form-group .theme-btn {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    background-color: #1967D2;
+    font-size: 15px;
+    border: 0;
+    line-height: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    padding: 18px 35px 15px 35px;
+    width: 100%;
+}
+
+/* new section */
+.wpjobpress-related-jobs-sec{
+    position: relative;
+    padding: 50px 0px;
+}
+.wpjobpress-title-box {
+    position: relative;
+    margin-bottom: 28px;
+}
+.wpjobpress-title-box h3 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 35px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.wpjobpress-title-box .text {
+    font-size: 15px;
+    color: #696969;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+.wpjobpress-inner-box {
+    position: relative;
+    padding: 47px;
+    background: #FFFFFF;
+    border: 1px solid #ECEDF2;
+    border-radius: 8px;
+    transition: all 300ms ease;
+    text-align: center;
+    transition: all .3s;
+}
+.wpjobpress-inner-box:hover {
+    box-shadow: 0px 7px 18px rgba(64, 79, 104, 0.05);
+}
+.wpjobpress-inner-box .job-other-info {
+    position: absolute;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.wpjobpress-inner-box .job-other-info li {
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 15px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+.wpjobpress-inner-box .job-other-info .time {
+    position: absolute;
+    right: 10px;
+    margin-right: 0px;
+    border-radius: 40px;
+}
+.wpjobpress-inner-box .job-other-info li.time {
+    background: rgba(25, 103, 210, 0.15);
+    color: #1967D2;
+    position: absolute;
+    right: 10px;
+    margin-right: 0px;
+    border-radius: 40px;
+}
+.wpjobpress-inner-box .job-other-info li.green,.wpjobpress-inner-box .job-other-info li.privacy {
+    background: rgba(52, 168, 83, 0.15);
+    color: #34A853;
+    border-radius: 0;
+    border-radius: 0 30px 30px 0;
+}
+.wpjobpress-inner-box .job-other-info li.required {
+    background: rgba(249, 171, 0, 0.15);
+    color: #F9AB00;
+    border-radius: 0;
+    border-radius: 0 30px 30px 0;
+}
+.wpjobpress-inner-box .job-other-info li {
+    width: auto;
+    display: inline-block;
+    border-radius: 0;
+    border-radius: 0 30px 30px 0;
+}
+.wpjobpress-inner-box .company-logo {
+    position: relative;
+    display: block;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 12px;
+    transition: all 300ms ease;
+}
+.wpjobpress-inner-box .company-name {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    color: #34A853;
+    margin-bottom: 6px;
+}
+.wpjobpress-inner-box h4 {
+    font-size: 18px;
+    color: #202124;
+    font-weight: 500;
+    line-height: 26px;
+    top: -3px;
+    margin-bottom: 3px;
+}
+.wpjobpress-inner-box  h4 a {
+    color: #202124;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+.wpjobpress-inner-box .location {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #696969;
+    font-weight: 400;
+    margin-bottom: unset;
+    padding: 15px 0px;
+}
+.wpjobpress-inner-box .company-name {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    color: #34A853;
+    margin-bottom: 6px;
+}
+.wpjobpress-inner-box h4{
+    font-size: 18px;
+    color: #202124;
+    font-weight: 700;
+    line-height: 26px;
+    top: -3px;
+    margin-bottom: 3px;
+}
+.wpjobpress-inner-box h4 a{
+    color: #202124;
+    transition: all 300ms ease;
+}
+.wpjobpress-inner-box h4 a:hover{
+    color: #1967D2;
+}
+.wpjobpress-inner-box .location i{
+   
+    font-size: 18px;
+    line-height: 22px;
+    color: #696969;
+}
+/* burger menu */
+.wpwpjobpress-burger-nav{
+    background: white;
+    padding: 20px 15px;
+    display: none;
+}
+.wpwpjobpress-burger-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wpwpjobpress-burger-head-logo {
+    width:200px
+}
+.wpwpjobpress-burger-head-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    gap: 20px;
+}
+.wpwpjobpress-burger-head-icons a {
+    text-decoration: none;
+    color: black;
+}
+.wpjobpress-candidate-wrape .slick-next{
+    display: unset;
+    right: unset;
+    right: 10px;
+
+    display: none;
+}
+.wpjobpress-candidate-wrape .slick-prev{
+    display: unset;
+    left: unset;
+    left: 10px;
+    display: none;
+}
+@media screen and (max-width: 780px) {
+    .x-col-3,.x-col-4,.x-col-33,.x-col-8{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    .x-col-3{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    .x-col-6,.x-col-88{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .x-col-33,.x-col-40,.x-col-44 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    .wpjobpress-find-inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 46px;
+    }
+    .wpwpjobpress-burger-nav{
+        display: block;
+        z-index: 99;
+        position: relative;
+    }
+    .wpwpjobpress-slide-bar{
+        display: flex;
+        flex-direction: column;
+        background: black;
+        width: 90%;
+        height: 100vh;
+        transform: translateX(-130%);
+        opacity: 0;
+        transition: all .3s;
+        position: absolute;
+        top: 0;
+        z-index: 9999;
+        border: 0;
+    }
+    .wpwpjobpress-slide-bar-active{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .wpwpjobpress-slide-bar::before{
+        content: "";
+    width: 120%;
+    height: 100%;
+    background-color: #000000;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+
+    }
+    .wpwpjobpress-burger-menu{
+        width: 100%;
+    }
+    .wpwpjobpress-burger-menu ul{
+        list-style: none;
+        width: 100%;
+
+    }
+    .wpwpjobpress-burger-menu ul li{
+        width: 100%;
+        padding: 20px 0px;
+        color: gray;
+        display: flex;
+        padding: 30px;
+        font-size: 25px;
+        margin: 8px;
+        transition: all .3s ;
+    }
+    .wpwpjobpress-burger-menu ul li:hover{
+        background: white;
+        color: black;
+    }
+    .wpwpjobpress-burger-menu ul li a{
+        width: 100%;
+        text-decoration: none;
+        color: gray;
+    }
+    .wpwpjobpress-burger-head{
+        background: white;
+        padding: 15px 0px;
+    }
+    .wpwpjobpress-burger-nav{
+        display: block;
+    }
+  
+    .wpjobpress-header-sec{
+        display: none;
+    }
+    .wpjobpress-main-wrape {
+        position: relative;
+        display: block;
+        padding: 93px 15px;
+        top: 0;
+    }
+    .wpjobpress-main-wrape .wpjobpress-main-left {
+        position: relative;
+        padding: 100px 0 6px;
+        
+    }
+    .wpjobpress-main-wrape .wpjobpress-main-right {
+        padding: 0px 0 59px;
+    }
+    .wpjobpress-form-job form {
+        display: flex;
+        justify-content: space-between;
+        align-items: unset;
+        flex-direction: column;
+    }
+    .wpjobpress-form-control {
+        position: relative;
+        text-align: left;
+        margin-bottom: 0;
+        border-right: 1px solid #e6e6e6;
+        padding: 20px 0px;
+    }
+    .wpjobpress-form-control input[type="submit"]{
+        width: 100%;
+        font-size: 25px;
+        padding: 25px 0px;
+    }
+    .wpjobpress-footer-widgets2 .form-f-control {
+        position: relative;
+        margin: unset;
+        padding: 0px;
+    }
+    .new-yark-img img {
+        transition: all .3s;
+        transform: scale(1);
+        height: 100%;
+        object-fit: cover;
+    }
+    .new-content {
+        position: absolute;
+        left: 0;
+        bottom: 42px;
+        width: 100%;
+        padding: 30px 52px 25px;
+        z-index: 9;
+    }
+    .wpjobpress-main-wrape {
+        position: relative;
+        display: block;
+        padding: 43px 15px;
+        top: -109px;
+    }
+    .wpjobpress-slide-box {
+        position: relative;
+        display: inline-block;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        position: relative;
+        padding: 55px 35px;
+        background: #fff;
+        border: 1px solid #ecedf2;
+        box-sizing: border-box;
+        border-radius: 8px;
+        transition: all .3s ease;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 6px;
+    }
+    .wpjobpress-job-descr-left .about-job-btns {
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-left: 29px;
+        width: unset;
+    }
+    .wpjobpress-about-job-sec .wpjobpress-about-job-head .about-job-btns{
+        justify-content: unset;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .x-col-3,.x-col-4,.x-col-8,.x-col-44{
+        flex: 0 0 100%;
+        width: 100%;
+    }
+    .x-col-33,.x-col-40 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+    .wpwpjobpress-burger-head-icons a:last-child{
+        display: none;
+    }
+    .wpjobpress-job-box .job-box-content ul {
+        position: relative;
+        display: flex;
+        margin-bottom: 10px;
+        width: 100%;
+        flex-direction: row;
+        float: unset;
+        height: unset;
+        flex-wrap: wrap;
+    }
+    .wpjobpress-find-inner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+    .wpjobpress-footerBottom .fb-sub {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .wpjobpress-find-btn-box a {
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        color: #fff;
+        background-color: #1967d2;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 400;
+        padding: 18px 35px 15px;
+        margin-right: 20px;
+        transition: .3s;
+        display: flex;
+        white-space: unset;
+    }
+    .wpjobpress-apply-btns a {
+        margin: 0 10px 10px;
+        text-decoration: none;
+        outline: none;
+        display: block;
+        white-space: unset;
+    }
+    a{
+        display: flex;
+    }
+    .wpjobpress-footerBottom .copyright p {
+        color: #deebff;
+        display: flex;
+        width: 100%;
+    }
+    .wpjobpress-main-wrape .wpjobpress-main-left .bottom-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    
+    .wpjobpress-main-wrape .wpjobpress-main-left .bottom-box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 64px;
+    }
+    .wpjobpress-slide-box {
+        position: relative;
+        display: inline-block;
+        padding: 0 15px;
+        margin-bottom: 30px;
+        position: relative;
+        padding: 55px 35px;
+        background: #fff;
+        border: 1px solid #ecedf2;
+        box-sizing: border-box;
+        border-radius: 8px;
+        transition: all .3s ease;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wpjobpress-footer-widgets2 .form-f-control input[type="submit"] {
+        width: 100%;
+        line-height: 35px;
+        color: #fff;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(64,79,104,.05);
+        border-radius: 8px;
+        outline: none;
+        border: 0;
+        margin-top: 5px;
+        background:#f9ab00;
+    left: 7px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 12px 35px;
+    }
+    .wpjobpress-job-descr-left .about-job-btns {
+        flex-wrap: nowrap;
+        justify-content:center;
+       
+    }
+    .wpjobpress-job-detail .job-overview-decs .other-options .social-share {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  }
